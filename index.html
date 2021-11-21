@@ -18,6 +18,47 @@
 </head>
 
 <body>
+    <!-- Edit Button -->
+    <div class="edit-container">
+        <button class="edit-btn">
+            <i class="fas fa-edit"></i>
+        </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-background"></div>
+    <div class="edit-modal-container">
+        <div class="edit-modal">
+            <div id="closeModal" class="close-modal">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="edit-container-content">
+                <div class="modal-header">Edit Your Profile</div>
+                <div class="modal-input-container">
+                    <input type="file" id="file" accept="image/*">
+                    <label id="chooseFileBtn" for="file">
+                        <i class="far fa-image"></i>Choose an Image
+                    </label>
+                    <div class="input-box">
+                        <h4>Name:</h4>
+                        <input type="text" placeholder="Enter name" id="usernameInput" autocomplete="off">
+                    </div>
+                    <div class="input-box">
+                        <h4>Location:</h4>
+                        <input type="text" placeholder="Enter location" id="userLocationInput" autocomplete="off">
+                    </div>
+                    <h3>Add Links:</h3>
+
+                </div>
+                <div class="modal-footer">
+                    <button id="closeModal" class="btn btn-negative">Cancel</button>
+                    <button id="updateBtn" class="btn btn-positive">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card -->
     <div class="container">
         <div class="user-info">
             <div class="img-container">
@@ -29,7 +70,6 @@
                 <p id="locationText">Location</p>
             </div>
         </div>
-
         <div class="user-links">
             <a href="" class="link-box twitter-box">
                 <i class="fab fa-twitter"></i>
@@ -44,12 +84,6 @@
                 <i class="fab fa-github"></i>
             </a>
         </div>
-    </div>
-
-    <div class="edit-container">
-        <button class="edit-btn">
-            <i class="fas fa-edit"></i>
-        </button>
     </div>
 
     <script src="script.js"></script>
