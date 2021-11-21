@@ -5,3 +5,5 @@
 🛠 Features include adding a custom name, profile image and introduction, location, skills and links to your other sites/platforms.
 
 ✍️ There will also be a number of different templates for the user to choose from.
+
+👀 DEMO: You can view the progress on this project [here](https://web-dev-dan.github.io/MySocial/).
