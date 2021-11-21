@@ -1,0 +1,166 @@
+/* Variables: */
+:root {
+    --color-light: rgb(240, 240, 240);
+    --color-dark: rgb(40, 40, 40);
+    --font-primary: 'Raleway', sans-serif;
+}
+
+/* Universal: */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: var(--color-light);
+    width: 100vw;
+    height: 100vh;
+    padding: 50px;
+    font-family: var(--font-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.edit-container {
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+/* Edit Button */
+.edit-btn {
+    background-color: rgb(198, 198, 198);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    transition: all .3s;
+}
+
+.edit-btn > i {
+    font-size: 24px;
+    color: white;
+}
+
+.edit-btn:hover {
+    cursor: pointer;
+    transform: scale(120%);
+}
+
+
+/* Profile Card */
+.container {
+    background-color: white;
+    width: 400px;
+    min-height: 600px;
+    padding: 50px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.user-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-container {
+    background-color: lightgray;
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 14px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.img-container > i {
+    font-size: 120px;
+    transform: translateY(20px);
+    color: gray;
+}
+
+.user-info > h1 {
+    margin-bottom: 8px;
+}
+
+.location {
+    color: gray;
+    width: 100%;
+    min-height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location > i {
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+
+.user-links {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-box {
+    background-color: gray;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.link-box:not(:first-child) {
+    margin-top: 14px;
+}
+
+.link-box:hover {
+    transform: scale(110%);
+}
+
+.link-box > i {
+    font-size: 35px;
+    color: white;
+}
+
+
+.github-box {
+    background-color: #333;
+}
+
+.twitter-box {
+    background-color: #00acee;
+}
+
+.facebook-box {
+    background-color: #3b5998;
+}
+
+.youtube-box {
+    background-color: #c4302b;
+}
