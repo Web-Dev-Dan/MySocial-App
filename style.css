@@ -116,7 +116,6 @@ html, body {
 
 .user-links {
     width: 100%;
-    /* margin-top: 30px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,21 +148,7 @@ html, body {
 }
 
 
-.github-box {
-    background-color: #333;
-}
 
-.twitter-box {
-    background-color: #00acee;
-}
-
-.facebook-box {
-    background-color: #3b5998;
-}
-
-.youtube-box {
-    background-color: #c4302b;
-}
 
 
 
@@ -219,7 +204,8 @@ html, body {
 
 .edit-modal {
     background-color: white;
-    width: 700px;
+    width: 500px;
+    max-height: 100vh;
     border-radius: 5px;
     overflow: hidden;
     position: relative;
@@ -297,6 +283,40 @@ input[type="text"] {
     margin-top: 30px;
 }
 
+.add-links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-links-container > input[type="text"] {
+    max-width: 200px;
+    min-width: 200px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.add-links-box {
+    width: 200px;
+    height: 60px;
+    min-height: 60px;
+    margin-top: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.add-links-box:hover {
+    cursor: pointer;
+    filter: brightness(90%);
+}
+
+.add-links-box > i {
+    font-size: 35px;
+}
 
 .modal-footer {
     width: 100%;
@@ -330,4 +350,33 @@ input[type="text"] {
 .btn:hover {
     cursor: pointer;
     filter: brightness(95%);
+}
+
+.github-box {
+    background-color: #333;
+    color: var(--color-light);
+}
+
+.twitter-box {
+    background-color: #00acee;
+    color: var(--color-light);
+}
+
+.facebook-box {
+    background-color: #3b5998;
+    color: var(--color-light);
+}
+
+.youtube-box {
+    background-color: #c4302b;
+    color: var(--color-light);
+}
+
+.grayscale {
+    background-color: gray;
+    color: var(--color-dark);
+}
+
+.hidden {
+    display: none;
 }
