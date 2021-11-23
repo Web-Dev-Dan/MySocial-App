@@ -105,19 +105,15 @@ function updateCard() {
     // Change Image:
     const uploadedImageBtn = document.querySelector('#file');
     const uploadedImage = uploadedImageBtn.value;
-    console.log(uploadedImageBtn.value);
 
     const str = uploadedImage.split("\\").pop();
-    console.log(str);
     const imgContainer = document.querySelector('.img-container');
     imgContainer.style.backgroundImage = `url('imgs/${str}')`;
 
     if (uploadedImage !== '') {
-        console.log('lets update image');
         const userIcon = document.querySelector('.fa-user');
         userIcon.style.display = 'none';
     } else {
-        console.log('leave it alone');
         userIcon.style.display = 'flex';
     }
     /* --------------------------------------- */
