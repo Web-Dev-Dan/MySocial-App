@@ -380,3 +380,67 @@ input[type="text"] {
 .hidden {
     display: none;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .edit-modal-container {
+        padding: 0;
+    }
+
+    .edit-modal {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        padding: 30px;
+    }
+
+    .edit-container-content {
+        height: calc(100vh - 50px);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .edit-container-content > .modal-header {
+        min-height: 80px;
+    }
+
+    .modal-input-container {
+        max-height: 75vh;
+        overflow-y: scroll;
+    }
+
+    .modal-footer {
+        height: 100px;
+        padding-top: 20px;
+    }
+
+    .btn {
+        font-family: var(--font-primary);
+        font-size: 16px;
+        width: 140px;
+    }
+
+    .input-box {
+        display: flex;
+        justify-content: flex-start;
+        width: 90%;
+    }
+
+    .input-box > h4 {
+        min-width: 80px;
+        font-size: 18px;
+    }
+    
+    input[type="text"] {
+        font-size: 18px;
+        min-width: calc(100vw - 198px);
+    }
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+
+  }
