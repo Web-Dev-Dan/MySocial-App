@@ -6,4 +6,4 @@
 
 ✍️ There will also be a number of different templates for the user to choose from.
 
-👀 DEMO: You can view the progress on this project [here](https://web-dev-dan.github.io/MySocial/).
+👀 DEMO: You can view the progress on this project [here](https://web-dev-dan.github.io/MySocial-App/).
